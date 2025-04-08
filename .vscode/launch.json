@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Next.js: Debug Server",
+        "type": "node",
+        "request": "launch",
+        "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/next",
+        "runtimeArgs": ["dev"],
+        "console": "integratedTerminal",
+        "sourceMaps": true,
+        "skipFiles": ["<node_internals>/**"],
+        "outFiles": ["${workspaceFolder}/.next/**/*.js"],
+        "resolveSourceMapLocations": ["${workspaceFolder}/**", "!**/node_modules/**"]
+      }
+    ]
+  }
+  
