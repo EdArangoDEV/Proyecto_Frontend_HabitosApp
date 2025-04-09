@@ -2,7 +2,7 @@ export const fetchRegisterUser = async (
   nombreUsuario: string,
   password: string
 ) => {
-  const response = await fetch("http://localhost:3001/users/registro", {
+  const response = await fetch("https://habitos-tracker-backend.vercel.app/users/registro", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -25,7 +25,7 @@ export const fetchLoginUser = async (
   // console.log("nombreUsuario: " + nombreUsuario);
   // console.log("password: " + password);
 
-  const response = await fetch("http://localhost:3001/users/login", {
+  const response = await fetch("https://habitos-tracker-backend.vercel.app/users/login", {
     method: "POST",
     credentials: "include",
     headers: {
